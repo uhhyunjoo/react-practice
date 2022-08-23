@@ -1,18 +1,19 @@
 import './ExpenseItem.css'
 import ExpenseDate from './ExpenseDate';
+import Card from './Card'
 
 // Expense Item 데이터를 렌더링하는 컴포넌트
 
 function ExpenseItem(props){
     // helper constant (도우미 상수)
     return (
-        <div className='expense-item'>
+        <Card className='expense-item'>
             <ExpenseDate date = {props.date}></ExpenseDate>
+            <h2> {props.title} </h2>
             <div className='expense_-item__description'>
-                <h2> {props.title} </h2>
                 <div className='expense-item__price'>${props.amount}</div>
             </div>
-        </div>
+        </Card>
     );
 }
 // App 컴포넌트에서 ExpenseItem으로 데이터를 전달하고

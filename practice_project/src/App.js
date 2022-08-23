@@ -22,8 +22,8 @@ function App() {
     },
   ];
   return (
-    <div align='center'>
-      <h2>Hing World</h2>
+    <div>
+      <h2 align='center'>Hing World</h2>
       <Expenses items = {expenses}></Expenses>
     </div>
   );
