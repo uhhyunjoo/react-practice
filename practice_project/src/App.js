@@ -4,29 +4,46 @@ const App = () => {
   const expenses = [
     {
       id: 'e1',
-      title: 'Toilet Paper',
-      amount: 94.12,
-      date: new Date(2020, 7, 14),
+      title: '아이네',
+      height: 158.00,
+      date: new Date(1994, 12, 17),
     },
-    { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12) },
+    {
+      id: 'e2', 
+      title: '징버거',
+      height: 161.9,
+      date: new Date(1995, 10, 8)
+    },
     {
       id: 'e3',
-      title: 'Car Insurance',
-      amount: 294.67,
-      date: new Date(2021, 2, 28),
+      title: '릴파',
+      height: 164,
+      date: new Date(1996, 3, 9),
     },
     {
       id: 'e4',
-      title: 'New Desk (Wooden)',
-      amount: 450,
-      date: new Date(2021, 5, 12),
+      title: '주르르',
+      height: 161.9,
+      date: new Date(1997, 6, 10),
+    },
+    {
+      id: 'e5',
+      title: '고세구',
+      height: 30000,
+      date: new Date(1998, 9, 9),
+    },
+    {
+      id: 'e6',
+      title: '비챤',
+      height: 160,
+      date: new Date(2000, 1, 16),
     },
   ];
 
   return (
     <div>
       <h2 align='center'>Hing World</h2>
-      <Expenses items = {expenses}></Expenses>
+      <Expenses items={expenses}></Expenses>
     </div>
   );
 
