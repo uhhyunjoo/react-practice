@@ -33,7 +33,7 @@ function App() {
   /* return React.createElement(
     'div',
     {},
-    React.createElement('h2', {}, 'Hing World'),
+    React.createElement('h2', {align : 'center'}, 'Hing World'),
     React.createElement(Expenses, {items : expenses}, 'Hing World')); */
 }
 
