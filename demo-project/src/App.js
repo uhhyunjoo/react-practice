@@ -1,5 +1,6 @@
 import React from 'react';
 import Expenses from './components/Expenses/Expenses';
+import NewExpense from './components/NewExpense/NewExpense'
 const App = () => {
   const expenses = [
     {
@@ -9,7 +10,7 @@ const App = () => {
       date: new Date(1994, 11, 17),
     },
     {
-      id: 'e2', 
+      id: 'e2',
       title: '징버거',
       height: 161.9,
       date: new Date(1995, 9, 8)
@@ -43,15 +44,11 @@ const App = () => {
   return (
     <div>
       <h2 align='center'>Hing World</h2>
+      <NewExpense></NewExpense>
       <Expenses items={expenses}></Expenses>
     </div>
   );
 
-  /* return React.createElement(
-    'div',
-    {},
-    React.createElement('h2', {align : 'center'}, 'Hing World'),
-    React.createElement(Expenses, {items : expenses}, 'Hing World')); */
 }
 
 export default App;
