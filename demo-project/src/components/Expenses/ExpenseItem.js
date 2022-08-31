@@ -23,7 +23,7 @@ function ExpenseItem(props) {
 
             <div className='expense_-item__description'>
                 <h2> {title} </h2>
-                <div className='expense-item__price'>{props.height}cm</div>
+                <div className='expense-item__price'>{props.amount}cm</div>
             </div>
             <button onClick={clickHandler}>Change Title</button>
         </Card>
