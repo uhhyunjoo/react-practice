@@ -40,11 +40,14 @@ const App = () => {
       date: new Date(2000, 0, 16),
     },
   ];
-
+  const addExpenseHandler = (expense) => {
+    console.log('in App.js');
+    console.log(expense);
+  }
   return (
     <div>
       <h2 align='center'>Hing World</h2>
-      <NewExpense></NewExpense>
+      <NewExpense onAddExpense={addExpenseHandler} ></NewExpense>
       <Expenses items={expenses}></Expenses>
     </div>
   );
