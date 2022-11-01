@@ -3,13 +3,14 @@ import ExpenseForm from './ExpenseForm'
 import './NewExpense.css';
 
 // 사용자 입력을 위한 form 을 반환하는 컴포넌트
-const NewExpense = () => {
+const NewExpense = (props) => {
     const saveExpenseDataHandler = (enteredExpenseData) => {
         const expenseData = {
             ...enteredExpenseData,
             id: Math.random().toString()
         };
-        console.log(expenseData);
+        //console.log(expenseData);
+        props.onAddExpense(expenseData);
     };
     return (
         <div className="new-expense">

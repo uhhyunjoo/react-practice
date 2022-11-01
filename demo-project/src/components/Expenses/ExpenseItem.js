@@ -12,8 +12,8 @@ function ExpenseItem(props) {
     const [title, setTitle] = useState(props.title);
 
     const clickHandler = () => {
-        setTitle('Updated!');
-        console.log(title);
+        setTitle(props.title); // Update 누르면 제목 바뀜
+        //console.log(title);
 
     };
 
@@ -25,7 +25,9 @@ function ExpenseItem(props) {
                 <h2> {title} </h2>
                 <div className='expense-item__price'>{props.amount}cm</div>
             </div>
+
             <button onClick={clickHandler}>Change Title</button>
+
         </Card>
     );
 }
